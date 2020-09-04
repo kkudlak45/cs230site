@@ -1,0 +1,28 @@
+body {
+	margin: 0 24% 0 24%;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-weight: lighter;
+	background-color: #99d6ff;
+	padding: 8vh 0 8vh 0;
+	font-size: 6vh;
+}
+
+img {
+	align-self: center;
+	height: 100px;
+	width: 100px;
+}
+
+.row {
+	margin: 0 2% 0 2%;
+}
+
+.column {
+	float: left;
+	padding-right: 16px;
+	width: 18%;
+}
