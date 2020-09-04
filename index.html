@@ -2,13 +2,15 @@
 
 <html>
 	<head>
-		<title>first lab yo</title>
+		<title>first lab</title>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<h1>wassup homies</h1>
-		<h2>The Gang</h2>
+		<div class = "header">
+			<h1>"About Us"</h1>
+			<p><em>Enjoy the random meme characters I threw together</em></p>
+		</div>
 		<div class = "row">
 			<div class = "column">
 				<div class = "card">
@@ -46,5 +48,21 @@
 				</div>
 			</div>
 		</div>
+
+		<button onclick="count(1)">+</button>
+		<p id = "counter">0</p>
+		<button onclick="count(-1)">-</button>
+
+		<a target = "_blank" href = "https://github.com/kkudlak45/cs230site">My github repo!</a>
+		<p>This is a paragraph. This paragraph has 2 sentences. Now this paragraph has 3 sentences.</p>
+
+		<script>
+			function count(by) {
+				var counter = document.getElementById("counter");
+				var count = parseInt(counter.innerHTML);
+				count += by;
+				counter.innerHTML = count
+			}
+		</script>
 	</body>
 </html>
