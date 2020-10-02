@@ -40,6 +40,9 @@ if (isset($_POST['signup-submit'])) {
 					mysqli_stmt_execute($stmt);
 					mysqli_stmt_store_result($stmt);
 
+					$sqlimg = "INSERT INTO profile (uname) VALUES ('$username')";
+					mysqli_query($conn, $sqlimg);
+
 					header("Location: ../signup.php?signup=success");
 					exit();
 				}
