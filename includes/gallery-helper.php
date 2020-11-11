@@ -46,7 +46,7 @@ if (isset($_POST['gallery-submit'])) {
     	mysqli_stmt_store_result($stmt);
 
     	move_uploaded_file($file_tmp_name, $destination);
-    	header("Location: ../admin.php?success=UploadSuccess");
+    	header("Location: ../admin.php?success=yes");
     	exit();
     }
 }
