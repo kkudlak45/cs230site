@@ -23,7 +23,7 @@ require 'includes/header.php';
         font-weight: bold;
     }
     
-    </style>
+</style>
     
     <script>
         function triggered(){

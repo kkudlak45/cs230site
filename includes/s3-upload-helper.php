@@ -5,7 +5,7 @@ require '../vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 
-if (isset('$_POST'['s3-submit'])) {
+if (isset($_POST['s3-submit'])) {
 	$file = $_FILES['s3-image'];
     $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
@@ -16,11 +16,10 @@ if (isset('$_POST'['s3-submit'])) {
 
     try {
 
-
     	$s3Client = S3Client::factory(
     		array('region' => 'us-east-2',
-    		'version' => 'latest',
-    		'credentials' => array(
+        		'version' => 'latest',
+        		'credentials' => array(
     			'key' => "",
     			'secret' => ""
     		))
